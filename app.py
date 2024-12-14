@@ -11,7 +11,9 @@ public_url = ngrok.connect(8501)  # The default port for Streamlit
 st.write(f"Streamlit app is live at: {public_url}")
 
 # Load the trained model and preprocessor (replace the path as needed)
-model_pipeline = joblib.load("/content/model_pipeline.joblib")  # Update path to your model
+model_pipeline = joblib.load("model_pipeline.joblib")
+
+  # Update path to your model
 
 # Define Streamlit app layout
 st.title('Yolcu Sayısı Prediction')
